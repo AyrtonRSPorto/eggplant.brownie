@@ -13,9 +13,12 @@
 		CC39C123276D5F2500711C62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC39C121276D5F2500711C62 /* Main.storyboard */; };
 		CC39C125276D5F3100711C62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC39C124276D5F3100711C62 /* Assets.xcassets */; };
 		CC39C128276D5F3100711C62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC39C126276D5F3100711C62 /* LaunchScreen.storyboard */; };
+		CCD1F02C277253C700A1DD92 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD1F02B277253C700A1DD92 /* Refeicao.swift */; };
+		CCD1F02F2772546800A1DD92 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD1F02E2772546800A1DD92 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC114509276EA1B900797181 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = "../../../../Library/Autosave Information/MyPlayground.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CC39C118276D5F2500711C62 /* eggplant.brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eggplant.brownie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC39C11B276D5F2500711C62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC39C11D276D5F2500711C62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,8 @@
 		CC39C124276D5F3100711C62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC39C127276D5F3100711C62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC39C129276D5F3100711C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD1F02B277253C700A1DD92 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
+		CCD1F02E2772546800A1DD92 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +63,40 @@
 			children = (
 				CC39C11B276D5F2500711C62 /* AppDelegate.swift */,
 				CC39C11D276D5F2500711C62 /* SceneDelegate.swift */,
-				CC39C11F276D5F2500711C62 /* ViewController.swift */,
-				CC39C121276D5F2500711C62 /* Main.storyboard */,
+				CCD1F033277254F600A1DD92 /* Models */,
+				CCD1F0372772555300A1DD92 /* Views */,
+				CCD1F0342772551A00A1DD92 /* Controllers */,
 				CC39C124276D5F3100711C62 /* Assets.xcassets */,
+				CC114509276EA1B900797181 /* MyPlayground.playground */,
 				CC39C126276D5F3100711C62 /* LaunchScreen.storyboard */,
 				CC39C129276D5F3100711C62 /* Info.plist */,
 			);
 			path = eggplant.brownie;
+			sourceTree = "<group>";
+		};
+		CCD1F033277254F600A1DD92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCD1F02B277253C700A1DD92 /* Refeicao.swift */,
+				CCD1F02E2772546800A1DD92 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CCD1F0342772551A00A1DD92 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC39C11F276D5F2500711C62 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CCD1F0372772555300A1DD92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC39C121276D5F2500711C62 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD1F02F2772546800A1DD92 /* Item.swift in Sources */,
 				CC39C120276D5F2500711C62 /* ViewController.swift in Sources */,
 				CC39C11C276D5F2500711C62 /* AppDelegate.swift in Sources */,
 				CC39C11E276D5F2500711C62 /* SceneDelegate.swift in Sources */,
+				CCD1F02C277253C700A1DD92 /* Refeicao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
